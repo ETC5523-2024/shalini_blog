@@ -2,3 +2,28 @@
 .navbar-dark, .quarto-title-banner {
   background-color: #006DAE;
 }
+
+/* Primary Color */
+:root {
+  --bs-primary: #2c3e50;
+}
+
+/* Background Color */
+body {
+  background-color: #f9f9f9;
+}
+
+/* Heading Color */
+h1, h2, h3, h4, h5, h6 {
+  color: #34495e;
+}
+
+/* Text Color */
+body, p, span, a {
+  color: #2c3e50;
+}
+
+/* Font Family */
+body {
+  font-family: "Helvetica, Arial, sans-serif", sans-serif;
+}
