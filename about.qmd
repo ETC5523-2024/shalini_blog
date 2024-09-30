@@ -6,8 +6,16 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
-
+      href: https://github.com/snair1809
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shalini-nair-1809/
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi there! I'm Shalini, a Master's student in Business Analytics, where data is my playground and curiosity is my compass. When I'm not unlocking hidden insights from data, I’m often exploring the boundless world of art and music. 
+
+I love getting lost in the melodies of diverse genres, diving deep into the visual storytelling of anime, and binge-watching K-dramas, which fuel both my creative and analytical sides. 
+
+Fun fact: I speak four languages, and that makes experiencing global cultures through music and media even more enriching!
+
+Welcome to my world—where creativity meets data, and every detail has a story to tell.
