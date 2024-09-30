@@ -1,12 +1,10 @@
 ---
-title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
+title: "Taylor Swift’s Re-Releases: How 'Taylor’s Version' Boosts Album Popularity"
+author: "Shalini Nair"
 date: "2022-07-18"
-categories: [news]
+categories: ["music"]
 ---
 
-This is the first post in a Quarto blog. Welcome!
 
-![](thumbnail.jpg)
 
 
