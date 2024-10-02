@@ -2,7 +2,7 @@
 title: "About"
 image: shalini.jpg
 about:
-  template: jolla
+  template: marquee
   links:
     - icon: github
       text: Github

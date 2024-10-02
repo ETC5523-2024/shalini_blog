@@ -9,19 +9,22 @@ image: "taylor.gif"
 
 # Taylor Swift’s Re-Releases: How 'Taylor’s Version' Boosts Album Popularity
 
-Hey Swifties and music enthusiasts!
+Hey Swifties and music enthusiasts!🎶
 
 Have you noticed Taylor Swift re-releasing her albums lately? If you've been following her journey,you know these aren't just simple remasters.Taylor's Version albums come packed with fresh tracks and a whole new vibe. But what's the buzz behind these re-releases? Do they actually make the albums more popular? Let's dive into an analysis of taylor Swift's discography to find out!
 
+![](albums.jpeg)
 ## Why Taylor Swift is Re-Recording Her Albums
 
 Taylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as "Taylor's Version", she not only asserts he artistic ownership but also offers fans something new and exciting. These re-releases often include "From the Vault" tracks, which are songs that didn't make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor's creative process.
 
 As taylor wisely puts it "Everything you lose is a step you take." this sentiment perfectly captures her journey to reclaim her music and evolve as an artist.
 
-
+![](yoyok.gif)
 ## How do these Re-releases Perform?
 
 To understand the impact of Taylor's re-releases,I compared the critical and fan reception of the original albums versus their re-released counterparts using data from the 'taylor' R package.
 
 #### Critical Reception : METACRITIC SCORES
+
+
