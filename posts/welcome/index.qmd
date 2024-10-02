@@ -1,10 +1,12 @@
 ---
 title: "Taylor Swift’s Re-Releases: How 'Taylor’s Version' Boosts Album Popularity"
 author: "Shalini Nair"
-date: "2022-07-18"
+date: today
 categories: ["music"]
+image: "taylor.gif"
 ---
 
 
+# Taylor Swift’s Re-Releases: How 'Taylor’s Version' Boosts Album Popularity
 
 
