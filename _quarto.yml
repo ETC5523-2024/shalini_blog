@@ -7,7 +7,7 @@ author:
   url: "https://github.com/snair1809"
 
 website:
-  title: "Data Insights with Shalini"
+  title: "The Data Dreamer"
   navbar:
     right:
       - text: "About"
@@ -17,7 +17,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: journal
     css: styles.css
 
 

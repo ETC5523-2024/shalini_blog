@@ -1,21 +1,20 @@
 /* Global Styles */
 
 /* Navbar and Title Banner */
-.navbar-dark,
-.quarto-title-banner {
-  background-color: #D4AF37; /* Gold */
+.navbar-dark {
+  background-color: #EBBED3 !important; /* Light pink */
 }
 
 /* Primary Color */
 :root {
-  --bs-primary: #D4AF37; /* Gold */
+  --bs-primary: #B8396B; /* Deep pink */
 }
 
 /* Background Color */
 body {
-  background-color: #000000; /* Black */
+  background-color: #FFF5CC  ; /* Light beige */
   font-family: "Helvetica, Arial, sans-serif", sans-serif;
-  color: #FFFFFF; /* White text for readability against black background */
+  color: #8C4F66; /* Dark pink */
 }
 
 /* Fix for the white strip - Targeting specific elements */
@@ -24,14 +23,13 @@ header,
 .quarto-title,
 .navbar-light,
 .navbar {
-  background-color: #D4AF37 !important; /* Force Gold Background */
-  color: #FFFFFF; /* White text on the gold background */
+  color: #B8396B; /* Deep pink */
 }
 
 /* Main container fix if it has a white background */
 main,
 .container {
-  background-color: #000000 !important; /* Ensure main content is black */
+  background-color: #FFF5CC !important; /* Light beige */
 }
 
 /* Heading Color */
@@ -41,19 +39,19 @@ h3,
 h4,
 h5,
 h6 {
-  color: #D4AF37; /* Gold for headings */
+  color: #B8396B; /* Deep pink */
 }
 
 /* Text Color */
 p,
 span,
 a {
-  color: #FFFFFF; /* White text for readability against black background */
+  color: #8C4F66; /* Dark pink */
 }
 
 /* Update link hover color */
 a:hover {
-  color: #D4AF37; /* Gold on hover */
+  color: #76BAE0; /* Soft blue */
 }
 
 /* Font Family */
@@ -63,121 +61,62 @@ body {
 
 /* Button Styling */
 .btn-primary {
-  background-color: #D4AF37; /* Gold */
-  border-color: #D4AF37;
-  color: #FFFFFF;
+  background-color: #B8396B; /* Deep pink */
+  border-color: #B8396B;
+  color: #FFF5CC  ;
 }
 
 .btn-primary:hover {
-  background-color: #E0C166; /* Lighter Gold on hover */
-  border-color: #E0C166;
-  color: #FFFFFF;
+  background-color: #8C4F66; /* Dark pink */
+  border-color: #8C4F66;
+  color: #E4DFD3  ;
 }
 
 /* Meta Title Styling */
 .meta-title {
-  background-color: #000000; /* Black background */
-  color: #D4AF37; /* Gold text */
-  padding: 10px; /* Optional: Adds some spacing around the text */
+  background-color: #E4DFD3  ; /* Light beige */
+  color: #B8396B; /* Deep pink */
+  padding: 10px;
 }
 
 /* Blog Listing Styles */
 
 /* Blog Titles Styling on Home Page */
 #quarto-content .listing-title a {
-  color: #D4AF37; /* Gold color for titles */
+  color: #B8396B; /* Deep pink */
 }
 
 /* Optional: Change title color on hover */
 #quarto-content .listing-title a:hover {
-  color: #E0C166; /* Lighter gold on hover */
+  color: #76BAE0; /* Soft blue */
 }
 
 /* Date Styling */
 #quarto-content .listing-date {
-  color: #FFFFFF; /* White */
+  color: #8C4F66; /* Dark pink */
 }
 
 /* Excerpt Text Styling */
 #quarto-content .listing-description {
-  color: #FFFFFF; /* White */
+  color: #8C4F66; /* Dark pink */
 }
 
 /* Category Text Styling */
 #quarto-content .listing-category {
-  color: #FFFFFF; /* White */
+  color: #8C4F66; /* Dark pink */
 }
 
-/* Author Name Styling */
-#quarto-content .listing-author {
-  color: #FFFFFF; /* White */
-}
 
 /* Optional Hover Effects */
 #quarto-content .listing-category:hover,
 #quarto-content .listing-author:hover {
-  color: #E0C166; /* Lighter gold on hover */
+  color: #76BAE0; /* Soft blue */
 }
 
-/* Taylor Swift-Themed Styles for Specific Blog Post */
-
-/* Scope styles to the blog post with class 'taylor-post' */
-.taylor-post .navbar-dark,
-.taylor-post .quarto-title-banner {
-  background-color: #D4AF37; /* Gold */
-}
-
-/* Primary Color */
-.taylor-post :root {
-  --bs-primary: #D4AF37; /* Gold */
-}
-
-/* Background Color */
-.taylor-post body {
-  background-color: #000000; /* Black */
-  color: #FFFFFF; /* White text for readability against black background */
-}
-
-/* Heading Color for Taylor-themed posts */
-.taylor-post h1,
-.taylor-post h2,
-.taylor-post h3,
-.taylor-post h4,
-.taylor-post h5,
-.taylor-post h6 {
-  color: #D4AF37; /* Gold for headings */
-}
-
-/* Text Color for Taylor-themed posts */
-.taylor-post p,
-.taylor-post span,
-.taylor-post a {
-  color: #FFFFFF; /* White text for readability against black background */
-}
-
-/* Additional Link Styling for Taylor-themed posts */
-.taylor-post a:hover {
-  color: #D4AF37; /* Gold hover effect */
-}
-
-/* Button Styling for Taylor-themed posts */
-.taylor-post .btn-primary {
-  background-color: #D4AF37; /* Gold */
-  border-color: #D4AF37;
-  color: #FFFFFF;
-}
-
-.taylor-post .btn-primary:hover {
-  background-color: #E0C166; /* Lighter Gold */
-  border-color: #E0C166;
-  color: #FFFFFF;
-}
-
-/* Meta Title Styling for Taylor-themed posts */
-.taylor-post .meta-title {
-  background-color: #000000; /* Black background */
-  color: #D4AF37; /* Gold text */
-  padding: 10px; /* Optional: Adds spacing */
+/* Center Align Images */
+img {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Ensure Backgrounds are Transparent */
@@ -187,4 +126,5 @@ body {
 .listing-author {
   background-color: transparent;
 }
+
 

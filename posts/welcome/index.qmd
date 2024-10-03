@@ -4,12 +4,59 @@ author: "Shalini Nair"
 date: today
 categories: ["music"]
 image: "taylor.gif"
-classes: ["taylor-post"]
 ---
 
-<div class="taylor-post">
 
-# Taylor Swift’s Re-Releases: How 'Taylor’s Version' Boosts Album Popularity
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(taylor)
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(DT)
+
+```
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+taylor_albums<-taylor_albums
+
+taylor_albums_clean <- taylor_albums %>%
+  filter(!is.na(metacritic_score) & !ep)
+
+taylor_albums_clean <- taylor_albums_clean %>%
+  mutate(version = ifelse(grepl("Taylor's Version", album_name), "Re-released", "Original"))
+
+boxplot_metacritic <- ggplot(taylor_albums_clean, aes(x = version, y = metacritic_score, fill = version)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("Original" = "#B8396B", "Re-released" = "#E0C166")) + # Gold colors
+  labs(title = "Metacritic Score Comparison: Original vs. Taylor's Version",
+       x = "Album Version",
+       y = "Metacritic Score") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+# Convert to interactive plotly plot
+plotly_boxplot <- ggplotly(boxplot_metacritic)
+ 
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+density_plot_user <- ggplot(taylor_albums_clean, aes(x = user_score, fill = version)) +
+  geom_density(alpha = 0.6) +
+  scale_fill_manual(values = c("Original" = "#B8396B", "Re-released" = "#E0C166")) + # Gold colors
+  labs(title = "User  Score Comparison: Original vs. Taylor's Version",
+       x = "User  Score",
+       y = "Density") +
+  theme_minimal()
+
+# Convert to interactive plotly plot
+plotly_density <- ggplotly(density_plot_user)
+
+```
+
+
+
 
 Hey Swifties and music enthusiasts!🎶
 
@@ -21,20 +68,69 @@ Have you noticed Taylor Swift re-releasing her albums lately? If you've been fol
 
 Taylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as "Taylor's Version", she not only asserts he artistic ownership but also offers fans something new and exciting. These re-releases often include "From the Vault" tracks, which are songs that didn't make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor's creative process.
 
-As taylor wisely puts it "Everything you lose is a step you take." this sentiment perfectly captures her journey to reclaim her music and evolve as an artist.
+As taylor wisely puts itin her song You're on your own kid, "Everything you lose is a step you take." this sentiment perfectly captures her journey to reclaim her music and evolve as an artist.
 
 ![](yoyok.gif) 
 
 ## How do these Re-releases Perform?
 
-To understand the impact of Taylor's re-releases,I compared the critical and fan reception of the original albums versus their re-released counterparts using data from the 'taylor' R package.
+Critics have always had a lot of love for Taylor's Albums.but the Taylor's Version releases are getting even higher ratings. A standout examples is "Mr. Perfectly Fine" from Fearless("Taylor's Version"), a song that was'nt included in the original but became a fan favourite for its emotional depth.
 
-#### Critical Reception : METACRITIC SCORES
+To see how much better these re-releases are doing we checked out the Metacritic Scores for both the original albums and the re-releases as seen in @fig-boxplot.
 
-```{r,echo=FALSE}
-library(taylor)
-taylor_albums
- 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: FALSE 
+#| message: FALSE
+#| warning: FALSE
+#| label: fig-boxplot
+#| fig-cap: Boxplot comparing Metacritic scores for original and re-released albums
+#| fig-pos: H
+plotly_boxplot
 ```
 
-</div>
+Clearly, the re-released albums are getting better reviews than the originals, thanks to the improved production,bonus tracks, and Taylor's control over the final versions.
+
+## How do Fans Feel About The Re-Releases?
+
+It is not just the critics who love the re-releases-fans are all in too. We took a look at user scores from platforms like Metacritic to see how the original albums compare to the Taylor's Version releases. Take "Come Back...Be Here" from Red("Taylor's Version") for example, it hits fans hard, combining nostalgia with fresh content.
+
+Check out this interactive density plot in @fig-density comparing user scores:
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+#| echo: FALSE 
+#| message: FALSE
+#| warning: FALSE
+#| label: fig-density
+#| fig-cap: Density plot comparing user scores for original and re-released albums
+#| fig-pos: htbp
+plotly_density
+```
+
+The fans clearly love Taylor's Version albums even more than the originals.It;s not just about revisiting old songs- Taylor's new tracks and refined production are giving fans exactly what they want.
+
+
+## Nostalgia Meets a New Era
+
+One reason Taylor's Version albums are doing so well is that Taylor taps into nostalgia. Fans love reliving these albums, but they're also excited to experience the new tracks and stories she's releasing. Beyond just nostalgia,Taylor's re-releases are a powerful statement of *empowerement* and *artistic freedom*. 
+
+As highlighted in "The Return to Craft: Taylor Swift,Nostalgia and Covid-19", her blend of past and present resonates deeply with listeners.
+
+
+
+## The Big Takeaway: More than Just a Re-Release
+
+The data shows that Taylor's Version albums are'nt just rehashes-they're new milestones in her career.Critics and fans alike are giving these re-releases higher ratings, and for good reason. Taylor Swift is not just rewriting her past, she's redefining it, and we're all here for it.
+
+As Taylor says in "Long Live", "I had the time of my life fighting dragons with you." These re-releases represents the battles she's fought and the triumphs she's sharing with her fans, allowing everyone to relieve the magic while creating something new.
+
+![](longlive.gif)
+
+
+## References 
+
+1. McGrath, J. (2022). The Return to Craft: Taylor Swift, Nostalgia, and Covid-19. Popular Music and Society, 46(1), 70–84. [(link)](https://doi.org/10.1080/03007766.2022.2156761)
+
+2. Sloan, N. (2021). Taylor Swift and the Work of Songwriting. Contemporary Music Review, 40(1), 11–26. [(link) ](https://doi.org/10.1080/07494467.2021.1945226)
+ 
+3. Thompson, W. (2024). taylor: Lyrics and Song Data for Taylor Swift's Discography (Version 3.1.0.9000) [R package]. GitHub. [(link)](https://taylor.wjakethompson.com)
+
+
