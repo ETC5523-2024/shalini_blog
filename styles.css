@@ -1,0 +1,138 @@
+/* Global Styles */
+
+/* Navbar and Title Banner */
+.navbar-dark {
+  background-color: #EBBED3 !important; /* Light pink */
+}
+
+/* Primary Color */
+:root {
+  --bs-primary: #B8396B; /* Deep pink */
+}
+
+/* Background Color */
+body {
+  background-color: #FFF5CC  ; /* Light beige */
+  font-family: "Helvetica, Arial, sans-serif", sans-serif;
+  color: #8C4F66; /* Dark pink */
+}
+
+/* Fix for the white strip - Targeting specific elements */
+header,
+.quarto-header,
+.quarto-title,
+.navbar-light,
+.navbar {
+  color: #B8396B; /* Deep pink */
+}
+
+/* Main container fix if it has a white background */
+main,
+.container {
+  background-color: #FFF5CC !important; /* Light beige */
+}
+
+/* Heading Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #B8396B; /* Deep pink */
+}
+
+/* Text Color */
+p,
+span,
+a {
+  color: #8C4F66; /* Dark pink */
+}
+
+/* Update link hover color */
+a:hover {
+  color: #76BAE0; /* Soft blue */
+}
+
+/* Font Family */
+body {
+  font-family: "Helvetica, Arial, sans-serif", sans-serif;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #B8396B; /* Deep pink */
+  border-color: #B8396B;
+  color: #FFF5CC  ;
+}
+
+.btn-primary:hover {
+  background-color: #8C4F66; /* Dark pink */
+  border-color: #8C4F66;
+  color: #E4DFD3  ;
+}
+
+/* Meta Title Styling */
+.meta-title {
+  background-color: #E4DFD3  ; /* Light beige */
+  color: #B8396B; /* Deep pink */
+  padding: 10px;
+}
+
+/* Blog Listing Styles */
+
+/* Blog Titles Styling on Home Page */
+#quarto-content .listing-title a {
+  color: #B8396B; /* Deep pink */
+}
+
+/* Optional: Change title color on hover */
+#quarto-content .listing-title a:hover {
+  color: #76BAE0; /* Soft blue */
+}
+
+/* Date Styling */
+#quarto-content .listing-date {
+  color: #8C4F66; /* Dark pink */
+}
+
+/* Excerpt Text Styling */
+#quarto-content .listing-description {
+  color: #8C4F66; /* Dark pink */
+}
+
+/* Category Text Styling */
+#quarto-content .listing-category {
+  color: #8C4F66; /* Dark pink */
+}
+
+
+/* Optional Hover Effects */
+#quarto-content .listing-category:hover,
+#quarto-content .listing-author:hover {
+  color: #76BAE0; /* Soft blue */
+}
+
+/* Center Align Images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ensure Backgrounds are Transparent */
+.listing-date,
+.listing-description,
+.listing-category,
+.listing-author {
+  background-color: transparent;
+}
+
+/* Override .container to be fluid */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
