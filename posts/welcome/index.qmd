@@ -6,7 +6,6 @@ categories: ["music"]
 image: "taylor.gif"
 ---
 
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(taylor)
 library(ggplot2)
@@ -15,6 +14,7 @@ library(plotly)
 library(DT)
 
 ```
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 taylor_albums<-taylor_albums
@@ -31,11 +31,23 @@ boxplot_metacritic <- ggplot(taylor_albums_clean, aes(x = version, y = metacriti
   labs(title = "Metacritic Score Comparison: Original vs. Taylor's Version",
        x = "Album Version",
        y = "Metacritic Score") +
-  theme_minimal() +
-  theme(legend.position = "none")
+   theme_minimal(base_size = 14) +
+  theme(
+    plot.background = element_rect(fill = "#FFF5CC", color = NA), # Match site background
+    panel.background = element_rect(fill = "#FFF5CC", color = NA), # Match site background
+    panel.grid.major = element_line(color = "#E4DFD3"), # Subtle grid lines
+    panel.grid.minor = element_line(color = "#E4DFD3"),
+    plot.title = element_text(color = "#B8396B", size = 16, face = "bold"),
+    axis.title = element_text(color = "#8C4F66", size = 14)
+  )
 
-# Convert to interactive plotly plot
-plotly_boxplot <- ggplotly(boxplot_metacritic)
+# Convert to interactive Plotly plot
+plotly_boxplot <- ggplotly(boxplot_metacritic) %>%
+  layout(
+    plot_bgcolor = "#FFF5CC", # Match site background
+    paper_bgcolor = "#FFF5CC", # Match site background
+    font = list(color = "#8C4F66") # Dark pink text
+  )
  
 ```
 
@@ -47,10 +59,23 @@ density_plot_user <- ggplot(taylor_albums_clean, aes(x = user_score, fill = vers
   labs(title = "User  Score Comparison: Original vs. Taylor's Version",
        x = "User  Score",
        y = "Density") +
-  theme_minimal()
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.background = element_rect(fill = "#FFF5CC", color = NA), # Match site background
+    panel.background = element_rect(fill = "#FFF5CC", color = NA), # Match site background
+    panel.grid.major = element_line(color = "#E4DFD3"), # Subtle grid lines
+    panel.grid.minor = element_line(color = "#E4DFD3"),
+    plot.title = element_text(color = "#B8396B", size = 16, face = "bold"),
+    axis.title = element_text(color = "#8C4F66", size = 14)
+  )
 
-# Convert to interactive plotly plot
-plotly_density <- ggplotly(density_plot_user)
+# Convert to interactive Plotly plot
+plotly_density <- ggplotly(density_plot_user) %>%
+  layout(
+    plot_bgcolor = "#FFF5CC", # Match site background
+    paper_bgcolor = "#FFF5CC", # Match site background
+    font = list(color = "#8C4F66") # Dark pink text
+  )
 
 ```
 
