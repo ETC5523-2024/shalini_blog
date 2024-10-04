@@ -7,7 +7,6 @@ image: "taylor.gif"
 ---
 
 
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(taylor)
 library(ggplot2)
@@ -60,15 +59,64 @@ plotly_density <- ggplotly(density_plot_user)
 
 Hey Swifties and music enthusiasts!🎶
 
-Have you noticed Taylor Swift re-releasing her albums lately? If you've been following her journey,you know these aren't just simple remasters.Taylor's Version albums come packed with fresh tracks and a whole new vibe. But what's the buzz behind these re-releases? Do they actually make the albums more popular? Let's dive into an analysis of taylor Swift's discography to find out!
+Have you noticed Taylor Swift re-releasing her albums lately? If you've been following her journey,you know these aren't just simple remasters.Taylor's Version albums come packed with fresh tracks and a whole new vibe. But what's the buzz behind these re-releases? Do they actually make the albums more popular? Let's dive into an analysis of Taylor Swift's discography to find out!
 
 ![](albums.jpeg) 
 
+
+## Data Description
+Before we delve into the analysis, it's essential to understand the dataset used in this report. The data comprises various Taylor Swift albums with the following attributes:
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE}
+#| label: tbl-data-description
+# Filter out EPs and albums without Metacritic scores if needed
+album_data <- taylor_albums %>%
+  filter(!ep) %>%  # Exclude EPs
+  select(album_name, ep, album_release, metacritic_score, user_score)
+
+# Create the interactive datatable
+datatable(
+  album_data,
+  options = list(
+    pageLength = 10,       # Number of rows per page
+    autoWidth = TRUE,      # Automatically adjust column widths
+    searching = TRUE,      # Enable search box
+    ordering = TRUE,       # Enable column ordering
+    lengthChange = TRUE,   # Allow users to change the number of rows displayed
+    pagingType = "simple_numbers", # Type of pagination controls
+    scrollX = TRUE         # Enable horizontal scrolling
+  ),
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: left; font-weight: bold; font-size: 120%;',
+    'Table 1: Overview of Taylor Swift Albums'
+  ),
+  rownames = FALSE,         # Hide row names
+  class = 'cell-border stripe' # Add some styling
+)
+
+```
+Notes:
+
+EP: Indicates whether the release is an Extended Play (TRUE) or a full album (FALSE).
+Metacritic Score: An aggregate score out of 100, reflecting the critical reception based on reviews from mainstream publications.
+User Score: A score out of 10, representing the average rating given by users on Metacritic.
+
+
+## Understanding Metacritic and User Scores
+
+#### Metacritic Score
+The Metacritic Score is a weighted average of reviews from top-tier critics and publications. It provides a comprehensive view of an album's critical reception. Scores range from 0 to 100, with higher scores indicating more favorable reviews. For instance, a Metacritic Score of 90 suggests universal acclaim, while a score below 60 may indicate mixed or unfavorable reviews.
+
+#### User Score
+The User Score is an average rating submitted by users on Metacritic. Unlike the Metacritic Score, which aggregates professional critics' reviews, the User Score reflects the general audience's perception. Scores range from 0 to 10, with higher scores signifying greater user satisfaction. This metric helps gauge how well an album resonates with the broader fanbase.
+
+The absolute value of these for both the original and the re-released albums can be seen in @tbl-data-description.
+
 ## Why Taylor Swift is Re-Recording Her Albums
 
-Taylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as "Taylor's Version", she not only asserts he artistic ownership but also offers fans something new and exciting. These re-releases often include "From the Vault" tracks, which are songs that didn't make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor's creative process.
+Taylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as "Taylor's Version", she not only asserts the artistic ownership but also offers fans something new and exciting. These re-releases often include "From the Vault" tracks, which are songs that didn't make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor's creative process.
 
-As taylor wisely puts itin her song You're on your own kid, "Everything you lose is a step you take." this sentiment perfectly captures her journey to reclaim her music and evolve as an artist.
+As taylor wisely puts it in her song You're on your own kid, "Everything you lose is a step you take." this sentiment perfectly captures her journey to reclaim her music and evolve as an artist.
 
 ![](yoyok.gif) 
 
@@ -105,7 +153,7 @@ Check out this interactive density plot in @fig-density comparing user scores:
 plotly_density
 ```
 
-The fans clearly love Taylor's Version albums even more than the originals.It;s not just about revisiting old songs- Taylor's new tracks and refined production are giving fans exactly what they want.
+The fans clearly love Taylor's Version albums even more than the originals.It's not just about revisiting old songs- Taylor's new tracks and refined production are giving fans exactly what they want.
 
 
 ## Nostalgia Meets a New Era

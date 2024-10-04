@@ -4,21 +4,21 @@
     "href": "index.html",
     "title": "The Data Dreamer",
     "section": "",
-    "text": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity\n\n\n\n\n\n\nmusic\n\n\n\n\n\n\n\n\n\nOct 3, 2024\n\n\nShalini Nair\n\n\n\n\n\n\nNo matching items"
+    "text": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity\n\n\n\n\n\n\nmusic\n\n\n\n\n\n\n\n\n\nOct 4, 2024\n\n\nShalini Nair\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
     "section": "",
-    "text": "Hey Swifties and music enthusiasts!🎶\nHave you noticed Taylor Swift re-releasing her albums lately? If you’ve been following her journey,you know these aren’t just simple remasters.Taylor’s Version albums come packed with fresh tracks and a whole new vibe. But what’s the buzz behind these re-releases? Do they actually make the albums more popular? Let’s dive into an analysis of taylor Swift’s discography to find out!"
+    "text": "Hey Swifties and music enthusiasts!🎶\nHave you noticed Taylor Swift re-releasing her albums lately? If you’ve been following her journey,you know these aren’t just simple remasters.Taylor’s Version albums come packed with fresh tracks and a whole new vibe. But what’s the buzz behind these re-releases? Do they actually make the albums more popular? Let’s dive into an analysis of Taylor Swift’s discography to find out!"
   },
   {
     "objectID": "posts/welcome/index.html#why-taylor-swift-is-re-recording-her-albums",
     "href": "posts/welcome/index.html#why-taylor-swift-is-re-recording-her-albums",
     "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
     "section": "Why Taylor Swift is Re-Recording Her Albums",
-    "text": "Why Taylor Swift is Re-Recording Her Albums\nTaylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as “Taylor’s Version”, she not only asserts he artistic ownership but also offers fans something new and exciting. These re-releases often include “From the Vault” tracks, which are songs that didn’t make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor’s creative process.\nAs taylor wisely puts itin her song You’re on your own kid, “Everything you lose is a step you take.” this sentiment perfectly captures her journey to reclaim her music and evolve as an artist."
+    "text": "Why Taylor Swift is Re-Recording Her Albums\nTaylor Swift has been on a mission to regain control of her master recordings- a crucial step for any artist. By re-releasing her albums as “Taylor’s Version”, she not only asserts the artistic ownership but also offers fans something new and exciting. These re-releases often include “From the Vault” tracks, which are songs that didn’t make it into the original albums but were created during the same era. this means more content for fans and deeper look into Taylor’s creative process.\nAs taylor wisely puts it in her song You’re on your own kid, “Everything you lose is a step you take.” this sentiment perfectly captures her journey to reclaim her music and evolve as an artist."
   },
   {
     "objectID": "about.html",
@@ -39,7 +39,7 @@
     "href": "posts/welcome/index.html#how-do-fans-feel-about-the-re-releases",
     "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
     "section": "How do Fans Feel About The Re-Releases?",
-    "text": "How do Fans Feel About The Re-Releases?\nIt is not just the critics who love the re-releases-fans are all in too. We took a look at user scores from platforms like Metacritic to see how the original albums compare to the Taylor’s Version releases. Take “Come Back…Be Here” from Red(“Taylor’s Version”) for example, it hits fans hard, combining nostalgia with fresh content.\nCheck out this interactive density plot in Figure 2 comparing user scores:\n\n\n\n\n\n\n\n\nFigure 2: Density plot comparing user scores for original and re-released albums\n\n\n\n\nThe fans clearly love Taylor’s Version albums even more than the originals.It;s not just about revisiting old songs- Taylor’s new tracks and refined production are giving fans exactly what they want."
+    "text": "How do Fans Feel About The Re-Releases?\nIt is not just the critics who love the re-releases-fans are all in too. We took a look at user scores from platforms like Metacritic to see how the original albums compare to the Taylor’s Version releases. Take “Come Back…Be Here” from Red(“Taylor’s Version”) for example, it hits fans hard, combining nostalgia with fresh content.\nCheck out this interactive density plot in Figure 2 comparing user scores:\n\n\n\n\n\n\n\n\nFigure 2: Density plot comparing user scores for original and re-released albums\n\n\n\n\nThe fans clearly love Taylor’s Version albums even more than the originals.It’s not just about revisiting old songs- Taylor’s new tracks and refined production are giving fans exactly what they want."
   },
   {
     "objectID": "posts/welcome/index.html#nostalgia-meets-a-new-era",
@@ -68,5 +68,19 @@
     "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
     "section": "References",
     "text": "References\n\nMcGrath, J. (2022). The Return to Craft: Taylor Swift, Nostalgia, and Covid-19. Popular Music and Society, 46(1), 70–84. (link)\nSloan, N. (2021). Taylor Swift and the Work of Songwriting. Contemporary Music Review, 40(1), 11–26. (link)\nThompson, W. (2024). taylor: Lyrics and Song Data for Taylor Swift’s Discography (Version 3.1.0.9000) [R package]. GitHub. (link)"
+  },
+  {
+    "objectID": "posts/welcome/index.html#data-description",
+    "href": "posts/welcome/index.html#data-description",
+    "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
+    "section": "Data Description",
+    "text": "Data Description\nBefore we delve into the analysis, it’s essential to understand the dataset used in this report. The data comprises various Taylor Swift albums with the following attributes:\n\n\n\n\nTable 1\n\n\n\n\n\n\n\n\n\n\nNotes:\nEP: Indicates whether the release is an Extended Play (TRUE) or a full album (FALSE). Metacritic Score: An aggregate score out of 100, reflecting the critical reception based on reviews from mainstream publications. User Score: A score out of 10, representing the average rating given by users on Metacritic."
+  },
+  {
+    "objectID": "posts/welcome/index.html#understanding-metacritic-and-user-scores",
+    "href": "posts/welcome/index.html#understanding-metacritic-and-user-scores",
+    "title": "Taylor Swift’s Re-Releases: How ‘Taylor’s Version’ Boosts Album Popularity",
+    "section": "Understanding Metacritic and User Scores",
+    "text": "Understanding Metacritic and User Scores\n\nMetacritic Score\nThe Metacritic Score is a weighted average of reviews from top-tier critics and publications. It provides a comprehensive view of an album’s critical reception. Scores range from 0 to 100, with higher scores indicating more favorable reviews. For instance, a Metacritic Score of 90 suggests universal acclaim, while a score below 60 may indicate mixed or unfavorable reviews.\n\n\nUser Score\nThe User Score is an average rating submitted by users on Metacritic. Unlike the Metacritic Score, which aggregates professional critics’ reviews, the User Score reflects the general audience’s perception. Scores range from 0 to 10, with higher scores signifying greater user satisfaction. This metric helps gauge how well an album resonates with the broader fanbase.\nThe absolute value of these for both the original and the re-released albums can be seen in Table 1."
   }
 ]
